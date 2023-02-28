@@ -1,8 +1,8 @@
 .home {
   border: 1px solid red;
-  /* display: flex;
+display: flex;
     flex-direction: row;
-    justify-content: space-around; */
+    justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -35,9 +35,10 @@
 }
 
 .sentence {
+  padding: 4rem;
   display: block;
   text-align: center;
   justify-items: center;
   border: 1px solid red;
   position: relative;
-}
+} 
