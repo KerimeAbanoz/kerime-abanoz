@@ -1,26 +1,8 @@
-.home {
-  border: 1px solid red;
-display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 6rem;
-  min-height: 100vh;
-  position: relative;
-}
-
-.hello {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .title {
   display: block;
   font-size: 100px;
-  border: 1px solid red;
   padding: 40px;
+  margin: 2rem auto;
 }
 
 .profilePic {
@@ -28,7 +10,7 @@ display: flex;
   width: 400px;
   min-width: 352px;
   height: 400px;
-  margin: auto;
+  margin: 9rem auto;
   border: none;
   border-radius: 50%;
   position: relative;
@@ -39,6 +21,5 @@ display: flex;
   display: block;
   text-align: center;
   justify-items: center;
-  border: 1px solid red;
   position: relative;
-} 
+}
