@@ -7,7 +7,14 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import profilePic from "../../img/profilepic.jpg";
+import Project1 from "./Project1";
+import Project2 from "./Project2";
+import Project3 from "./Project3";
+import Project4 from "./Project4";
+import movieapp from "../../img/movieapp.jpg";
+import contactapp from "../../img/contactapp.jpg";
+import tasktracker from "../../img/tasktracker.jpg";
+import randompeople from "../../img/randompeople.jpg";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -57,11 +64,12 @@ export default function Projects() {
     <Box
       sx={{
         display: "block",
-        bgcolor: "background.paper",
+        bgcolor: "#28303e",
         width: "100%",
-        height: "500px",
+        height: "800px",
       }}
     >
+      <h1>My projects</h1>
       <AppBar position="static">
         <Tabs
           value={value}
@@ -83,16 +91,56 @@ export default function Projects() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <iframe src="https://fire-contact-sigma.vercel.app/"></iframe>
+          <img
+            sx={{
+              display: "block",
+              width: "20px",
+              maxWidth: "50px",
+              height: "500px",
+            }}
+            src={movieapp}
+            alt=""
+          />
+          <Project1 />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-        <iframe src="https://task-tracker-11.netlify.app/"></iframe>
+          <img
+            sx={{
+              display: "block",
+              width: "20px",
+              maxWidth: "50px",
+              height: "500px",
+            }}
+            src={contactapp}
+            alt=""
+          />
+          <Project2 />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-        <iframe src="https://movie-finder-teal.vercel.app/"></iframe>
+          <img
+            sx={{
+              display: "block",
+              width: "20px",
+              maxWidth: "50px",
+              height: "500px",
+            }}
+            src={tasktracker}
+            alt=""
+          />
+          <Project3 />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-        <iframe src="https://getrandompeople.netlify.app/"></iframe>
+          <img
+            sx={{
+              display: "block",
+              width: "20px",
+              maxWidth: "50px",
+              height: "500px",
+            }}
+            src={randompeople}
+            alt=""
+          />
+          <Project4 />
         </TabPanel>
       </SwipeableViews>
     </Box>
