@@ -82,7 +82,7 @@ export default function Projects() {
           <Tab label="Project One" {...a11yProps(0)} />
           <Tab label="Project Two" {...a11yProps(1)} />
           <Tab label="Project Three" {...a11yProps(2)} />
-          <Tab label="Project Three" {...a11yProps(3)} />
+          <Tab label="Project Four" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -90,52 +90,76 @@ export default function Projects() {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
-        <TabPanel value={value} index={0} dir={theme.direction}>
+        <TabPanel
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          value={value}
+          index={0}
+          dir={theme.direction}
+        >
           <img
-            sx={{
-              display: "block",
-              width: "20px",
-              maxWidth: "50px",
-              height: "500px",
+            style={{
+              maxHeight: "500px",
             }}
             src={movieapp}
             alt=""
           />
           <Project1 />
         </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
+        <TabPanel
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          value={value}
+          index={1}
+          dir={theme.direction}
+        >
           <img
-            sx={{
-              display: "block",
-              width: "20px",
-              maxWidth: "50px",
-              height: "500px",
+            style={{
+              maxHeight: "500px",
             }}
             src={contactapp}
             alt=""
           />
           <Project2 />
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
+        <TabPanel
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          value={value}
+          index={2}
+          dir={theme.direction}
+        >
           <img
-            sx={{
-              display: "block",
-              width: "20px",
-              maxWidth: "50px",
-              height: "500px",
+            style={{
+              maxHeight: "500px",
             }}
             src={tasktracker}
             alt=""
           />
           <Project3 />
         </TabPanel>
-        <TabPanel value={value} index={3} dir={theme.direction}>
+        <TabPanel
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          value={value}
+          index={3}
+          dir={theme.direction}
+        >
           <img
-            sx={{
-              display: "block",
-              width: "20px",
-              maxWidth: "50px",
-              height: "500px",
+            style={{
+              maxHeight: "500px",
             }}
             src={randompeople}
             alt=""
